@@ -24,6 +24,12 @@ describe('sayHello', function(){
     it("should return 'Hello, Jane!' when called with 'Jane'", () => {
         expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
+    it("should return 'Hello, Alex!' when called with 'Alex'", () => {
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    });
+    it("should return 'Hello, Pat!' when called with 'Pat'", () => {
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
 });
 
 
