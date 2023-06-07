@@ -85,6 +85,37 @@ describe ('isFive', function(){
         expect(isFive(6)).toBe(false);
     })
 });
-
+describe ("isEven",function(){
+    it("should be a defined function", function(){
+        expect(typeof isEven).toBe('function');
+    })
+    it("should return true if even", function(){
+        expect(isEven(2)).toBe(true );
+    })
+    it("should return true if negative even", function(){
+        expect( isEven(-4)).toBe(true );
+    })
+    it("should return false if odd", function(){
+        expect(isEven(3)).toBe(false );
+    })
+    it("should return false if string", function(){
+        expect(isEven("banana")).toBe(false );
+    })
+    it("should return true if 8", function(){
+        expect(isEven(8)).toBe(true );
+    })
+    it("should return false if infinity", function(){
+        expect( isEven(Infinity)).toBe(false);
+    })
+    it("should return false if true", function(){
+        expect(isEven(true)).toBe(false);
+    })
+    it("should return false if false", function(){
+        expect(isEven(false)).toBe(false);
+    })
+    it("should return false if no argument", function(){
+        expect(isEven()).toBe(false);
+    })
+})
 
 

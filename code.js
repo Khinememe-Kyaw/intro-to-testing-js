@@ -17,6 +17,11 @@ function isFive(input){
         return false;
     }
 }
-console.log(isFive(5));
-console.log(isFive("5"));
-console.log(isFive(6));
+
+function isEven(input){
+   if (input%2===0 && input !== false){
+       return true;
+   }else{
+       return false;
+   }
+}
