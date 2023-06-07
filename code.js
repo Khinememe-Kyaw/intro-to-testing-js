@@ -25,3 +25,14 @@ function isEven(input){
        return false;
    }
 }
+
+function isVowel(input){
+    if (typeof input !== 'string' || input.length !== 1) {
+        return false;
+    }
+    else if(input.toLowerCase()=== "a" ||input.toLowerCase()=== "e" ||input.toLowerCase()=== "i" ||input.toLowerCase()=== "o" ||input.toLowerCase()==="u"){
+        return true;
+    }else{
+        return false;
+    }
+}
